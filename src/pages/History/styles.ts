@@ -8,6 +8,8 @@ export const HistoryContainer = styled.main`
   font-family: 'Roboto', sans-serif;
 
   h1 {
+    margin-top: -1rem;
+    width: 100%;
     font-size: 1.5rem;
     color: ${(props) => props.theme['gray-100']};
   }

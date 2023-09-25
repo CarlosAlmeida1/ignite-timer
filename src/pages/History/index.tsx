@@ -37,6 +37,12 @@ export function History() {
               <td>há 2 meses</td>
               <td>{renderStatus('yellow', 'Em andamento')}</td>
             </tr>
+            <tr>
+              <td>Tarefa</td>
+              <td>20 minutos</td>
+              <td>há 2 meses</td>
+              <td>{renderStatus('yellow', 'Em andamento')}</td>
+            </tr>
           </tbody>
         </table>
       </HistoryList>
