@@ -5,6 +5,8 @@ const renderStatus = (statusColor, children) => (
 )
 
 export function History() {
+
+  
   return (
     <HistoryContainer>
       <h1>Meu Histórico</h1>
