@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const HistoryContainer = styled.main`
   flex: 1;
@@ -13,7 +13,7 @@ export const HistoryContainer = styled.main`
     font-size: 1.5rem;
     color: ${(props) => props.theme['gray-100']};
   }
-`
+`;
 
 export const HistoryList = styled.div`
   flex: 1;
@@ -61,15 +61,15 @@ export const HistoryList = styled.div`
       }
     }
   }
-`
+`;
 const STATUS_COLORS = {
   yellow: 'yellow-500',
   green: 'green-500',
   red: 'red-500',
-} as const
+} as const;
 
 interface StatusProps {
-  statusColor: keyof typeof STATUS_COLORS
+  statusColor: keyof typeof STATUS_COLORS;
 }
 
 export const Status = styled.div.withConfig({
@@ -86,4 +86,4 @@ export const Status = styled.div.withConfig({
     border-radius: 50%;
     background: ${(props) => props.theme[STATUS_COLORS[props.statusColor]]};
   }
-`
+`;
