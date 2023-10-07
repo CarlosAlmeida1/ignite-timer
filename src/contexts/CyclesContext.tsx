@@ -11,7 +11,7 @@ import {
   interruptCurrentCycleAction,
   markCurrentCycleAsFinishedAction,
 } from '../reducers/cycles/actions';
-import { Cycle, cyclesReducer } from '../reducers/cycles/reducer';
+import { Cycle, cyclesReducer } from '../reducers/cycles/reducers';
 
 interface CreateCycleData {
   task: string;
@@ -101,7 +101,7 @@ export function CyclesContextProvider({
     dispatch(interruptCurrentCycleAction());
   }
 
-  retzurn(
+  return (
     <CyclesContext.Provider
       value={{
         cycles,
@@ -112,7 +112,6 @@ export function CyclesContextProvider({
         setSecondsPassed,
         createNewCycle,
         interruptCurrentCycle,
-        deleteCycle,
       }}
     >
       {children}
